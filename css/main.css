@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'Prism';
+    src: url(../font/Prism-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #aba726;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* navbar */
+.logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-bar {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #323031;
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.9);
+    transition: background-color .5s ease-in-out;
+}
+
+.nav-bar-menu {
+    list-style: none;
+}
+
+.nav-bar-menu-item {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    letter-spacing: 1.5px;
+}
+
+.nav-bar-menu-item:last-of-type {
+    margin-right: 0;
+}
+
+.nav-bar a {
+    color: unset;
+    text-decoration: none;
+}
+
+.nav-bar-menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-bar-menu-item:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+/* main */
+
+.main {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 100px;
+    align-items: center;
+    color: #fff;
+}
+
+.main-title {
+    font-family: 'Prism';
+    font-size: 6rem;
+    font-weight: 50;
+    opacity: 0.9;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+/* about */
+.dark-sections {
+    padding: 30px 60px;
+    background: linear-gradient(#3f3c3e, #232122);
+    color: #fff;
+}
+
+.about {
+    min-height: 100vh;
+    /* background-color: #232122; */
+    box-shadow: 0px -10px 20px -10px rgba(0, 0, 0, 0.9);
+}
+
+.section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.about-article {
+    min-height: 60vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+}
+
+.article-photo {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.article-photo-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fdfdfd;
+    border-radius: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.article-photo-bg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-photo::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #c8c8c9;
+    border-radius: 25px;
+    bottom: -10px;
+    left: -10px;
+}
+
+.article-photo.reverse::before {
+    left: unset;
+    right: -10px;
+}
+
+.about-article-description {
+    width: 500px;
+    text-align: justify;
+    line-height: 2rem;
+    letter-spacing: 1.1px;
+    font-size: 1.2rem;
+}
+
+/* beak */
+
+.break-section {
+    position: sticky;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    margin-top: -100vh;
+    background-color: #aba726;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.break-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.break-title {
+    color: #fff;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-family: 'Prism';
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+/* news */
+
+.news {
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* footer */
+
+footer {
+    background-color: #2C2A2B;
+    padding: 20px;
+    color: #fff;
+}

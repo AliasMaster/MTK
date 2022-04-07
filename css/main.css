@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@font-face {
-    font-family: 'Prism';
-    src: url(../font/Prism-Regular.otf);
+
+@font-face{
+    font-family:"Prism";
+    src: url('../font/PrismMedium.otf')
+}
+
+@font-face{
+    font-family:"Prism-light";
+    src: url('../font/PrismExtraLight.otf')
 }
 
 * {
@@ -14,42 +20,51 @@ html, body {
 }
 
 body {
-    background-color: #aba726;
     font-family: 'Open Sans', sans-serif;
+    background-color: #71ab26;
 }
-
 
 /* navbar */
 .logo {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    display: none;
+    font-family: 'Prism-light';
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: -10px;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
 .nav-bar {
     display: flex;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255, 0.8);
-    color: #323031;
+    background-color: rgb(255, 255, 255, 0);
+    color: #c8c8c9;
     padding: 20px 40px;
-    font-size: 1.6rem;
-    box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.9);
-    transition: background-color .5s ease-in-out;
+    font-size: 2rem;
+    transition: top 1s ease-in-out;
+}
+
+.nav-bar.scrolled-down {
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    color: #2C2A2B;
+    box-shadow: 0px 8px 10px -8px rgba(44, 42, 43, 1);
+    top: 0;
+}
+
+.nav-bar.scrolled-down .logo {
+    display: block;
 }
 
 .nav-bar-menu {
@@ -80,7 +95,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #000;
+    background-color: #c8c8c9;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -90,34 +105,86 @@ body {
 }
 
 
-
 /* main */
 
 .main {
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: -1;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding: 100px;
-    align-items: center;
+    padding: 40px 100px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.main-bottom {
+    margin-top: 70px;
+    margin-bottom: -140px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-info {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-info::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.main-info-photo {
+    height: 50%;
+    width: 50%;
+}
+
+.main-info img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+.main-info-description {
+    font-size: 1.5rem;
 }
 
 .main-title {
     font-family: 'Prism';
+    letter-spacing: 2px;
     font-size: 6rem;
-    font-weight: 50;
-    opacity: 0.9;
-    letter-spacing: 12px;
-    text-transform: uppercase;
+    color: #c8c8c8;
 }
 
 .background-img {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: -1;
     left: 0;
@@ -127,23 +194,57 @@ body {
     filter: brightness(30%);
 }
 
+.mini-galery {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(200, 200, 200, 0.2);
+    backdrop-filter: blur(7px);
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mini-galery-photo {
+    width: 100%;
+    height: 75%;
+}
+
+.mini-galery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mini-galery-description {
+    text-align: justify;
+    color: #c8c8c9;
+}
+
 /* about */
 .dark-sections {
     padding: 30px 60px;
-    background: linear-gradient(#3f3c3e, #232122);
-    color: #fff;
+    background: #fff;
+    color: #221C46;
+    padding-top: 100px;
 }
 
 .about {
     min-height: 100vh;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
     /* background-color: #232122; */
     box-shadow: 0px -10px 20px -10px rgba(0, 0, 0, 0.9);
 }
 
 .section-title {
     text-align: center;
-    color: #fff;
+    color: #221C46;;
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .about-article {
@@ -185,15 +286,15 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #c8c8c9;
+    background-color: #2C2A2B;
     border-radius: 25px;
-    bottom: -10px;
-    left: -10px;
+    bottom: -15px;
+    left: -15px;
 }
 
 .article-photo.reverse::before {
     left: unset;
-    right: -10px;
+    right: -15px;
 }
 
 .about-article-description {
@@ -206,37 +307,20 @@ body {
 
 /* beak */
 
-.break-section {
-    position: sticky;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    margin-top: -100vh;
-    background-color: #aba726;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    color: #fff;
-}
-
-.break-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(30%);
-}
-
 .break-title {
+    font-family: 'Prism';
+    letter-spacing: 2px;
+    font-size: 6rem;
     color: #fff;
-    height: 250px;
-    width: 100%;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
-    font-family: 'Prism';
-    letter-spacing: 2px;
-    font-weight: 100;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: -30px;
+    height: 250px;
 }
 
 /* news */

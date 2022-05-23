@@ -1,2 +1,0 @@
-# MTK
-Muzeum Telefonii Komórkowej

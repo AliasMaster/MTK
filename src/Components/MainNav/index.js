@@ -1,42 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import { scrollToElement, scrollTop } from '../../consts/scrollTo'
+import NavBar from '../NavBar'
 
 import './index.css'
-
 
 const MainNav = ({logo, display}) => {
 
   return (
     <Router>
-      <nav className={display ? 'main-nav displayed' : 'main-nav'} >
+      <nav className={display ? (window.innerWidth <= 768 ? 'main-nav displayed hamburger' : 'main-nav displayed') : (window.innerWidth <= 768 ? 'main-nav hamburger' : 'main-nav')} >
           <div className='main-logo'>
             <Link to="/" onClick={() => { scrollTop() }}>
               <img src={logo} alt='Logo'/>
             </Link>
           </div>
-          <ul className='nav-bar'>
-            <Link to="/" onClick={() => { scrollTop() }}>
-              <li className='nav-bar-item'>Strona Główna</li>
-            </Link>
-            <Link to="/Galeria">
-              <li className='nav-bar-item'>Galeria</li>
-            </Link>
-            <Link
-              to={{
-                  pathname: "/",
-                  state: { fromDashboard: true }
-              }} onClick={() => scrollToElement('history')}>
-              <li className='nav-bar-item'>Historia</li>
-            </Link>
-            <Link
-              to={{
-                  pathname: "/",
-                  state: { fromDashboard: true }
-              }} onClick={() => scrollToElement('footer')}>
-              <li className='nav-bar-item'>Kontakt</li>
-            </Link>
-          </ul>
+          <NavBar/>
       </nav>
     </Router>
   )

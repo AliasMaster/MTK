@@ -39,7 +39,9 @@
     min-height: 100vh;
     padding: 30px 0 30px 15%;
     position: relative;
-    gap: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-text {

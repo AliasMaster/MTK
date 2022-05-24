@@ -1,0 +1,25 @@
+{
+  "short_name": "Mtk",
+  "name": "Muzeum Telefonii Komórkowej",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "256x73"
+    },
+    {
+      "src": "logo-min.png",
+      "type": "image/png",
+      "sizes": "312x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#444",
+  "background_color": "#ffffff"
+}

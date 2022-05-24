@@ -1,0 +1,42 @@
+.main-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.main-logo img {
+    max-height: 230px;
+    opacity: 0.8;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+}
+
+.nav-bar-item {
+    opacity: 0.6;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.nav-bar-item:hover {
+    opacity: 0.9;
+}
+
+.nav-bar a {
+    color: unset;
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.main-social-media {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-social-media-item {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(0%) saturate(6864%) hue-rotate(160deg) brightness(80%) contrast(63%);
+    opacity: 0.6;
+}
+
+.main-social-media-item img {
+    max-width: 2rem;
+}
+
+.main-social-media-item.elektronik img {
+    max-width: 3.5rem;
+}
+
+.main-social-media-item:hover {
+    opacity: 1;
+}

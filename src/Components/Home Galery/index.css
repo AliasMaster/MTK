@@ -1,0 +1,128 @@
+.home-galery {
+    min-height: 100vh;
+    width: 100%;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(217,217,217,1) 100%);
+}
+
+.home-galery-content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.slide {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slide-left {
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);
+    padding-right: 80px;
+}
+
+.slide-right {
+    right: 0;
+    background: linear-gradient(270deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);
+    padding-left: 80px;
+}
+
+.home-galery-item {
+    height: 500px;
+    width: 400px;
+    box-shadow: 0px 0px 25px -10px #000000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+.home-galery-item.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.home-galery-item.prev {
+    z-index: 0;
+    opacity: 0.25;
+    transform: translate(calc(-50vw - 200px), -50%);
+}
+
+.home-galery-item.next {
+    z-index: 0;
+    opacity: 0.25;
+    transform: translate(calc(50vw - 200px), -50%);
+} 
+
+.home-galery-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-galery-item-description {
+    position: absolute;
+    background: #008affee;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    top: 135%;
+    transition: top 0.5s ease-in-out;
+    padding: 40px;
+}
+
+.home-galery-item-description .text {
+    line-height: 1.5rem;
+
+}
+
+.home-galery-item-description .text h3 {
+    font-size: 2rem;
+}
+
+.home-galery-item-description.top {
+    top: 0;
+}
+
+.home-galery-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 2rem;
+}
+
+.home-galery-icon.top {
+    color: #fff;
+}
+
+.home-galery-item.active .home-galery-icon {
+    cursor: pointer;
+}

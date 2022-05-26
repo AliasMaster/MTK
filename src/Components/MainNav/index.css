@@ -14,10 +14,25 @@
     opacity: 0.8;
 }
 
+.menu-hamburger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
 .nav-bar {
     list-style: none;
-    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+}
+
+.nav-bar-block {
+    width: 100%;
     align-items: center;
+    display: flex;
     justify-content: center;
     gap: 50px;
     margin: 0;

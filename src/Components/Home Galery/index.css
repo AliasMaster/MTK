@@ -20,32 +20,33 @@
 
 .slide {
     position: absolute;
-    height: 100%;
-    top: 0;
+    z-index: 2;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 
 .slide-left {
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);
     padding-right: 80px;
 }
 
 .slide-right {
     right: 0;
-    background: linear-gradient(270deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);
     padding-left: 80px;
 }
 
 .home-galery-item {
     height: 500px;
     width: 400px;
+    max-width: 80vw;
     box-shadow: 0px 0px 25px -10px #000000;
     border-radius: 25px;
     display: flex;
@@ -106,6 +107,7 @@
 
 .home-galery-item-description .text h3 {
     font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 .home-galery-item-description.top {

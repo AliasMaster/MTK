@@ -71,9 +71,12 @@
     grid-column: span 2;
 }
 
-.footer .app {
+.footer .App {
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 iframe.map {
@@ -131,6 +134,11 @@ iframe.map {
 .footer-authors span {
     letter-spacing: 1.2px;
     opacity: 0.6;
+    line-height: 1.2rem;
+}
+
+span.authors {
+    text-align: right;
 }
 
 /* \Footer Authors/ */

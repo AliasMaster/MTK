@@ -25,3 +25,9 @@
 .main-social-media-item:hover {
     opacity: 1;
 }
+
+.footer-social-media .main-social-media {
+    position: relative;
+    right: 0;
+    bottom: 0;
+}

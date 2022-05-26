@@ -17,6 +17,7 @@ import { GrMail } from "react-icons/gr";
 import { FiMapPin } from 'react-icons/fi'
 
 const Footer = () => {
+
   return (
     <section className='footer' id='footer'>
       <div className='patrons'>
@@ -76,8 +77,10 @@ const Footer = () => {
               <p>ul. Jagiellońska 13,</p>
               <p>41-200 Sosnowiec</p>
             </span>
-            {/* <MainSocialMedia/> */}
           </span>
+          <div className='footer-social-media'>
+            <MainSocialMedia/>
+          </div>
         </div>
         <div className='footer-map'>
           <Map/>
@@ -91,7 +94,7 @@ const Footer = () => {
         <span>
           Muzeum Telefonii Komorkowej &copy; 2022
         </span>
-        <span>
+        <span className='authors'>
           Piotr Maj, Filip Mrozik, Mateusz Minor
         </span>
       </div>

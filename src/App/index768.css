@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+
+    /* /Main\ */
+
     .main-content {
         height: 100%;
         display: flex;
@@ -19,6 +22,10 @@
     p.title-description {
         max-width: 100%;
     }
+
+    /* \Main/ */
+
+    /* /Nav\ */
 
     .menu-hamburger {
         font-size: 3rem;
@@ -99,25 +106,91 @@
     .hamburger .nav-bar.active {
         left: 0;
     }
-
-    .main-social-media {
-        display: none;
+    
+    .navigator .main-nav {
+        padding: 20px;
     }
+
+    .navigator .main-logo img {
+        max-height: 30px;
+    }
+
+    /* \Nav/ */
+
+    /* /Home Galery\ */
+    
+    .slide {
+        padding: 10px;
+    }
+
+    /* \Home Galery/ */
+    
+    /* /History\ */
+
+    .history {
+        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        gap: 20px;
+    }
+    
+    .history-article {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .history-article.reverse {
+        flex-direction: column-reverse;
+    }
+    
+    .history-img-box {
+        width: 100%;
+    }
+    
+    .history-text {
+        width: 100%;
+    }
+
+    /* \History/ */
+
+    /* /Footer\ */
     
     .footer-map {
         grid-column: span 1;
     }
     
-    .navigator .main-nav {
-        padding: 20px;
-    }
-    
     .patrons {
-        display: none;
+        gap: 20px;
+        padding: 40px 20px;
+        padding-bottom: 10px;
+    }
+
+    .patrons-content {
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .patron img {
+        height: 50px;
+        object-fit: contain;
     }
     
     .main-footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    /* \Footer/ */
+    
+    .main-social-media {
+        display: none;
+    }
+
+    .footer-authors {
+        font-size: 0.8rem;
+    }
+
+    .footer-social-media .main-social-media {
+        display: flex;
     }
 }

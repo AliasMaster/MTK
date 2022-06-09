@@ -43,24 +43,28 @@ const NabBar = () => {
                     <div className='close-top'></div>
                     <div className='close-bottom'></div>
                 </div>
-                <Link to="/" onClick={() => { scrollTop() }}>
+                <Link to="/muzeum" onClick={() => { scrollTop() }}>
+                    {/* from: to="/" to to="/muzeum" */}
                     <li className='nav-bar-item'>Strona Główna</li>
                 </Link>
-                <Link to="/Galeria" >
+                <Link to="/muzeum/Galeria" >
+                    {/* from: to="/Galeria" to to="/muzeum/Galeria" */}
                     <li className='nav-bar-item'>Galeria</li>
                 </Link>
                 <Link
                     to={{
-                        pathname: "/",
+                        pathname: "/muzeum",
                         state: { fromDashboard: true }
                     }} onClick={() => {scrollToElement('history')}}>
+                        {/* from: to="/" to to="/muzeum" */}
                     <li className='nav-bar-item'>Historia</li>
                 </Link>
                 <Link
                     to={{
-                        pathname: "/",
+                        pathname: "/muzeum",
                         state: { fromDashboard: true }
                     }} onClick={() => {scrollToElement('footer')}}>
+                        {/* from: to="/" to to="/muzeum" */}
                     <li className='nav-bar-item'>Kontakt</li>
                 </Link>
             </div>

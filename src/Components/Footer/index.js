@@ -42,24 +42,28 @@ const Footer = () => {
           <Router>
             <h3>Nawigacja:</h3>
             <ul>
-              <Link to="/" onClick={() => { scrollTop() }}>
+              <Link to="/muzeum" onClick={() => { scrollTop() }}>
+                {/* from: to="/" to to="/muzeum" */}
                 <li>Strona Glowna</li>
               </Link>
-              <Link to="/Galeria">
+              <Link to="/muzeum/Galeria">
+                {/* from: to="/Galeria" to to="/muzeum/Galeria" */}
                 <li>Galeria</li>
               </Link>
               <Link
               to={{
-                  pathname: "/",
+                  pathname: "/muzeum",
                   state: { fromDashboard: true }
               }} onClick={() => scrollToElement('history')}>
+                {/* from: to="/" to to="/muzeum" */}
                 <li>Historia</li>
               </Link>
               <Link
               to={{
-                  pathname: "/",
+                  pathname: "/muzeum",
                   state: { fromDashboard: true }
               }} onClick={() => scrollToElement('footer')}>
+                {/* from: to="/" to to="/muzeum" */}
                 <li>Kontakt</li>
               </Link>
             </ul>

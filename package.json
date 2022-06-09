@@ -1,5 +1,6 @@
 {
   "name": "mtk",
+  "homepage": "https://zse.edu.pl/muzeum",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

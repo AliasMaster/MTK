@@ -11,7 +11,8 @@ const MainNav = ({logo, display}) => {
     <Router>
       <nav className={display ? (window.innerWidth <= 768 ? 'main-nav displayed hamburger' : 'main-nav displayed') : (window.innerWidth <= 768 ? 'main-nav hamburger' : 'main-nav')} >
           <div className='main-logo'>
-            <Link to="/" onClick={() => { scrollTop() }}>
+            <Link to="/muzeum" onClick={() => { scrollTop() }}> 
+            {/* from: to="/" to to="/muzeum" */}
               <img src={logo} alt='Logo'/>
             </Link>
           </div>

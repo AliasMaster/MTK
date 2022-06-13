@@ -2,9 +2,9 @@ import React from 'react'
 
 import './index.css'
 
-import taktak from '../../Assets/Images/taktak.jpg'
-import simplus from '../../Assets/Images/simplus.jpg'
-import trawaTelefony from '../../Assets/Images/trawa-telefony.jpg'
+import history1 from '../../Assets/Images/history1.jpg'
+import history2 from '../../Assets/Images/history2.jpg'
+import history3 from '../../Assets/Images/history3.jpg'
 
 const History = () => {
   return (
@@ -13,27 +13,28 @@ const History = () => {
         <article className='history-article'>
             <div className='history-img-box'>
                 <div className='img-box-img'>
-                    <img src={taktak} alt="Taktak" />
+                    <img src={history1} alt="Taktak" />
                 </div>
             </div>
-            <p className='history-text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus est, bibendum non odio in, ornare dignissim nulla. Ut in convallis nulla. Quisque at blandit ex. Proin id mattis erat, et tempus felis. Quisque in leo interdum, tempor metus quis, volutpat urna. Ut tincidunt tortor eu rhoncus gravida. Sed eleifend hendrerit elit non bibendum. In ac sapien ut tortor vehicula iaculis. Nulla id suscipit neque, in ultrices mauris. Mauris sagittis odio nec lectus feugiat, et vehicula ante aliquet. Aliquam sapien nunc, imperdiet eu scelerisque nec, luctus eu velit. Mauris neque dolor, pulvinar in posuere et, dictum ac tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc et mi eget erat laoreet condimentum. Donec ac neque sed lorem iaculis lobortis in sit amet nunc.
-
-Integer eu massa augue. Morbi pellentesque odio id elit tristique, quis maximus quam tincidunt. Praesent tempor cursus dolor, non sollicitudin mauris dignissim eu. Phasellus volutpat facilisis lacus nec fringilla. Etiam hendrerit.
-            </p>
+            <div className='history-text'>
+                <p>
+                    Mania zbierania zaczęła się od telefonu mojego ojca, który w 1994 roku nabył telefon Maxon HP450. Reklamowany był jako "telefon kieszonkowy", ale w żadną kieszeń się nie mieścił. W roku 1998 zamienił go na nowszy telefon - Motorolę D520. Maxona dostałem ja - był to pierwszy telefon odłożony na przysłowiową "półkę". Swój osobisty telefon dostałem w 1999 roku. Był to malutki Siemens C25. Poza funkcją wykonywania połączeń, można było pisać sms :) 
+                </p>
+                <p>
+                    Następnie były kolejne modele, które musiałem mieć od razu po wprowadzeniu ich do sprzedaży. Były to Nokia 3210, 3310 i 7110. Później jakoś to poszło... Modeli telefonów było coraz więcej, więc było w czym wybierać. Skupiłem się głównie na Nokiach, gdyż były najbardziej wytrzymałe. W  tym czasie na wspomnianej "półce" pojawiały się kolejne telefony, które głównie wyszukiwałem na giełdach. Czasem wpadło coś od znajomych, którzy już wiedzieli co się święci. W niecałe dwa, trzy lata kolekcja powiększyła się do około 50-ciu modeli. Wraz z wygaszaniem technologii, w której działały pierwsze telefony stawały się one bezużyteczne, a to powodowało jeszcze większy przyrost ilości modeli w kolekcji. 
+                </p>
+                <p>
+                    Obecnie kolekcja liczy około tysiąca telefonów, w tym wiele wraz z oryginalnymi zestawami, z jakimi je sprzedawano. Przyrasta już nie w tak szybkim tempie, gdyż ciężko jest znaleźć model, którego nie mam. Nie poddaję się i kolekcje poszerzam też o akcesoria z tamtych lat związane z telefonami.
+                </p>
+            </div>
         </article>
         <article className='history-article reverse'>
-            <p className='history-text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus est, bibendum non odio in, ornare dignissim nulla. Ut in convallis nulla. Quisque at blandit ex. Proin id mattis erat, et tempus felis. Quisque in leo interdum, tempor metus quis, volutpat urna. Ut tincidunt tortor eu rhoncus gravida. Sed eleifend hendrerit elit non bibendum. In ac sapien ut tortor vehicula iaculis. Nulla id suscipit neque, in ultrices mauris. Mauris sagittis odio nec lectus feugiat, et vehicula ante aliquet. Aliquam sapien nunc, imperdiet eu scelerisque nec, luctus eu velit. Mauris neque dolor, pulvinar in posuere et, dictum ac tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc et mi eget erat laoreet condimentum. Donec ac neque sed lorem iaculis lobortis in sit amet nunc.
-
-Integer eu massa augue. Morbi pellentesque odio id elit tristique, quis maximus quam tincidunt. Praesent tempor cursus dolor, non sollicitudin mauris dignissim eu. Phasellus volutpat facilisis lacus nec fringilla. Etiam hendrerit.
-            </p>
             <div className='history-img-box small'>
                 <div className='img-box-img'>
-                    <img src={simplus} alt="Simplus" />
+                    <img src={history2} alt="Simplus" />
                 </div>
                 <div className='img-box-img'>
-                    <img src={trawaTelefony} alt="trawa Telefony" />
+                    <img src={history3} alt="trawa Telefony" />
                 </div>
             </div>
         </article>

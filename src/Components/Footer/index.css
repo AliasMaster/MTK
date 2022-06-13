@@ -1,6 +1,6 @@
 .footer {
     background: #333;
-    color: #fff;
+    color: var(--text);
 }
 
 .footer a {
@@ -13,7 +13,7 @@
 .patrons {
     padding: 10px;
     background-color: #222;
-    color: #aaa;
+    color: var(--text);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,11 +38,15 @@
 }
 
 .patron:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .patrons-text {
-    opacity: 0.7;
+    opacity: 0.5;
+}
+
+.patron.elektronik {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(668%) hue-rotate(237deg) brightness(111%) contrast(73%);
 }
 
 /* \Patrons/ */
@@ -128,7 +132,7 @@ iframe.map {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    color: #aaa;
+    color: var(--text);
 }
 
 .footer-authors span {

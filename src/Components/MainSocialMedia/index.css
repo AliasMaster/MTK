@@ -10,8 +10,7 @@
 }
 
 .main-social-media-item {
-    filter: brightness(0) saturate(100%) invert(95%) sepia(0%) saturate(6864%) hue-rotate(160deg) brightness(80%) contrast(63%);
-    opacity: 0.6;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(668%) hue-rotate(237deg) brightness(111%) contrast(73%);
 }
 
 .main-social-media-item img {

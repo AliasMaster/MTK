@@ -19,9 +19,34 @@
         width: 100%;
     }
 
+    .main-title {
+        width: 100%;
+        text-align: center;
+        font-family: 'Prism';
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+
+    .background .template-blue {
+        /* color: #fff; */
+    }
+
     p.title-description {
         max-width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
     }
+
+
+    .background img {
+        object-fit: cover;
+    }
+
+    /* .background-filter {
+        background: none;
+    } */
 
     /* \Main/ */
 
@@ -86,7 +111,7 @@
         left: 100vw;
         width: 100vw;
         height: 100vh;
-        background-color: #222;
+        background-color: rgb(34, 34, 34, 0.95);
         flex-direction: column;
         margin: 0;
         transition: left 0.3s ease-in-out;
@@ -106,6 +131,17 @@
     .hamburger .nav-bar.active {
         left: 0;
     }
+
+    .main-nav .nav-bar {
+    }
+
+    .main-nav .nav-bar.active + .menu-hamburger {
+        display: none;
+    }
+
+    .navigator .nav-bar.active + .menu-hamburger {
+        display: none;
+    }
     
     .navigator .main-nav {
         padding: 20px;
@@ -113,6 +149,10 @@
 
     .navigator .main-logo img {
         max-height: 30px;
+    }
+
+    .hamburger .nav-bar-item {
+        font-size: 2rem;
     }
 
     /* \Nav/ */
@@ -145,6 +185,7 @@
     
     .history-img-box {
         width: 100%;
+        flex-direction: column;
     }
     
     .history-text {

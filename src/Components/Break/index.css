@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: var(--text);
     gap: 20px;
     font-size: 1.5rem;
 }
@@ -17,7 +17,7 @@
 }
 
 .squere {
-    border: 5px solid #fff;
+    border: 5px solid var(--text);
     display: flex;
     padding: 40px;
     gap: 10px;

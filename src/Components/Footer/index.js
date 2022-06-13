@@ -25,7 +25,7 @@ const Footer = () => {
           <a className='patron' href='https://zse.edu.pl/erasmusaustria/' target='_blank' rel="noreferrer">
             <img src={erasmusLogo} alt="Logo Erasmus+" />
           </a>
-          <a className='patron' href='https://zse.edu.pl/' target='_blank' rel="noreferrer">
+          <a className='patron elektronik' href='https://zse.edu.pl/' target='_blank' rel="noreferrer">
             <img src={elektronikLogo} alt="Logo Elektronik" />
           </a>
         </div>

@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 const NabBar = () => {
 
-    var close, burger, nav, items
+    var close, burger, nav, items, html
     useEffect(() => {
+        html = document.querySelector('html')
         close = document.querySelectorAll('.close')
         burger = document.querySelectorAll('.menu-hamburger')
         nav = document.querySelector('.navigator .nav-bar')
@@ -15,6 +16,7 @@ const NabBar = () => {
         burger.forEach(e => {
             e.onclick = () => {
                 nav.classList.add('active')
+                html.classList.add('active')
             }
         })
 
@@ -33,6 +35,7 @@ const NabBar = () => {
 
     var removeNav = () => {
         nav.classList.remove('active')
+        html.classList.remove('active')
     }
 
   return (

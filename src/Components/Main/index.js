@@ -5,7 +5,9 @@ import MainSocialMedia from '../MainSocialMedia'
 
 import './index.css'
 
-import background from '../../Assets/Images/backgroundL.jpg'
+//import background from '../../Assets/Images/backgroundL.jpg'
+import background from '../../Assets/Images/backgroundVertical.png'
+//import background from '../../Assets/Images/backgroundHorizontalSmall.png'
 import logo from '../../Assets/Images/logo.png'
 
 
@@ -23,7 +25,7 @@ const Main = () => {
           <section className='main-text'>
             <div>
               <h1 className='main-title'>Muzeum <span className='template-blue'>Telefonii</span> Komórkowej</h1>
-              <p className='title-description'>Współpraca z&nbsp;Zespołem Szkół Elektronicznych i&nbsp;Informatycznych w&nbsp;Sosnowcu </p>
+              <p className='title-description'>W Zespole Szkół Elektronicznych i Informatycznych w Sosnowcu</p>
             </div>
           </section>
         </div>

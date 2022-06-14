@@ -1,30 +1,38 @@
-import nokia3310 from '../Assets/Images/nokia3310.png'
-import samsungs9 from '../Assets/Images/samsungs9.png'
-import iphone12 from '../Assets/Images/iphone12.png'
+import p1 from '../Assets/Images/phones/IMG_4421.JPG'
+import p2 from '../Assets/Images/phones/IMG_4428.JPG'
+import p3 from '../Assets/Images/phones/IMG_4455.JPG'
+import p4 from '../Assets/Images/phones/IMG_4464.JPG'
+import p5 from '../Assets/Images/phones/IMG_4465.JPG'
 
 export const PHONES = [
     {
         'id' : 1,
         'name': 'Iphone 12',
         'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at elit scelerisque, gravida lectus non, pulvinar orci. Morbi congue pharetra.',
-        'img': iphone12
+        'img': p1
     },
     {
         'id' : 2,
         'name': 'Nokia 3310',
         'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at elit scelerisque, gravida lectus non, pulvinar orci. Morbi congue pharetra.',
-        'img': nokia3310
+        'img': p2
     },
     {
         'id' : 3,
         'name': 'Samsung Galaxy s9',
         'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at elit scelerisque, gravida lectus non, pulvinar orci. Morbi congue pharetra.',
-        'img': samsungs9
+        'img': p3
     },
     {
         'id' : 4,
         'name': 'Samsung Galaxy s9',
         'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at elit scelerisque, gravida lectus non, pulvinar orci. Morbi congue pharetra.',
-        'img': samsungs9
+        'img': p4
+    },
+    {
+        'id' : 4,
+        'name': 'Samsung Galaxy s9',
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at elit scelerisque, gravida lectus non, pulvinar orci. Morbi congue pharetra.',
+        'img': p5
     }
 ]

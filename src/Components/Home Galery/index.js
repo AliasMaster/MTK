@@ -25,7 +25,7 @@ const HomeGalery = () => {
       values[1] = 0                 // current
       values[2] = 1                 // next
       
-      displayDesc(false)
+      // displayDesc(false)
       slides[values[0]].classList.add("prev");
       slides[values[1]].classList.add("active");
       slides[values[2]].classList.add("next");
@@ -78,63 +78,63 @@ const HomeGalery = () => {
     slides[values[1]].classList.add("active");
     slides[values[2]].classList.add("next");
 
-    displayDesc(false)
+    // displayDesc(false)
   }
 
   //show description
 
-  const [outIcon, setOutIcon] = useState(false);
+  // const [outIcon, setOutIcon] = useState(false);
 
-  var descBox, item, iconBox
-  var items = []
-  let j
+  // var descBox, item, iconBox
+  // var items = []
+  // let j
 
-  useEffect(() => {
-    item = document.querySelectorAll('.home-galery-item')
+  // useEffect(() => {
+  //   item = document.querySelectorAll('.home-galery-item')
 
-    j=0
-    item.forEach(e => {
-      e.childNodes.forEach(el => {
-        if(el.classList.contains('home-galery-item-description')) {
-          descBox = el
-        }
+  //   j=0
+  //   item.forEach(e => {
+  //     e.childNodes.forEach(el => {
+  //       if(el.classList.contains('home-galery-item-description')) {
+  //         descBox = el
+  //       }
 
-        if(el.classList.contains('home-galery-icon')) {
-          iconBox = el
-        }
-      })
+  //       if(el.classList.contains('home-galery-icon')) {
+  //         iconBox = el
+  //       }
+  //     })
       
-      items[j] = new Array(descBox, iconBox)
+  //     items[j] = new Array(descBox, iconBox)
 
-      j++
-    });
+  //     j++
+  //   });
 
-    displayDesc()
+  //   displayDesc()
 
-  }, []);
+  // }, []);
 
-  var displayDesc = (...args) => {
-    if(args[0] == false) {
-      for(let i = 0; i<items.length; i++) {
-        items[i][0].classList.remove('top')
-        items[i][1].classList.remove('top')
-      }
-      return 0
-    }
+  // var displayDesc = (...args) => {
+  //   if(args[0] == false) {
+  //     for(let i = 0; i<items.length; i++) {
+  //       items[i][0].classList.remove('top')
+  //       items[i][1].classList.remove('top')
+  //     }
+  //     return 0
+  //   }
 
-    for(let i = 0; i<items.length; i++) {
-      items[i][1].onclick = () => {
-        items[i][0].classList.toggle('top')
-        items[i][1].classList.toggle('top')
+  //   for(let i = 0; i<items.length; i++) {
+  //     items[i][1].onclick = () => {
+  //       items[i][0].classList.toggle('top')
+  //       items[i][1].classList.toggle('top')
 
-        if(items[i][1].classList.contains('top')) {
-          setOutIcon(true)
-        } else {
-          setOutIcon(false)
-        }
-      }
-    }
-  }
+  //       if(items[i][1].classList.contains('top')) {
+  //         setOutIcon(true)
+  //       } else {
+  //         setOutIcon(false)
+  //       }
+  //     }
+  //   }
+  // }
 
   //galery items
   var phonesArray = PHONES
@@ -147,7 +147,7 @@ const HomeGalery = () => {
   var galeryItems = phonesArray.map((phone) =>
     <article className='home-galery-item' key={phone.id}>
       <img src={phone.img} alt="phone" className='home-galery-item-img'/>
-      <div className='home-galery-item-description'>
+      {/* <div className='home-galery-item-description'>
         <div className='text'>
           <h3>{phone.name}</h3>
           <p>{phone.description}</p>
@@ -155,7 +155,7 @@ const HomeGalery = () => {
       </div>
       <div className='home-galery-icon'>
         {outIcon ? <AiFillInfoCircle /> : <AiOutlineInfoCircle />}
-      </div>
+      </div> */}
     </article>
   );
 

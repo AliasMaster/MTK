@@ -30,7 +30,7 @@ export const PHONES = [
         'img': p4
     },
     {
-        'id' : 4,
+        'id' : 5,
         'name': 'Samsung Galaxy s9',
         'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at elit scelerisque, gravida lectus non, pulvinar orci. Morbi congue pharetra.',
         'img': p5

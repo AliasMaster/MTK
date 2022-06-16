@@ -8,7 +8,6 @@ import './index.css'
 const MainNav = ({logo, display}) => {
 
   return (
-    <Router>
       <nav className={display ? (window.innerWidth <= 768 ? 'main-nav displayed hamburger' : 'main-nav displayed') : (window.innerWidth <= 768 ? 'main-nav hamburger' : 'main-nav')} >
           <div className='main-logo'>
             <Link to="/muzeum" onClick={() => { scrollTop() }}> 
@@ -18,7 +17,6 @@ const MainNav = ({logo, display}) => {
           </div>
           <NavBar/>
       </nav>
-    </Router>
   )
 }
 

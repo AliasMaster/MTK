@@ -1,4 +1,4 @@
-import { React } from 'react'
+import React from 'react'
 
 import MainNav from '../MainNav'
 import MainSocialMedia from '../MainSocialMedia'

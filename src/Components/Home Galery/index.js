@@ -1,6 +1,7 @@
-import { React, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { BsArrowBarRight,  BsArrowBarLeft} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 import { AiOutlineInfoCircle, AiFillInfoCircle } from 'react-icons/ai'
 
@@ -166,7 +167,9 @@ const HomeGalery = () => {
           <div className='home-galery-content'>
             {phonesArray.length > 3 ? galeryItems: ''}
           </div>
-          <button className='active'>Zobacz więcej</button>
+          <Link to="/muzeum/Galeria">
+            <button className='active'>Zobacz więcej</button>
+          </Link>
           <div className='slide slide-left' ref={prevButton}>
             <BsArrowBarLeft/>
           </div>

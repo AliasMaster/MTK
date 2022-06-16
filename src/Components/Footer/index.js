@@ -39,7 +39,6 @@ const Footer = () => {
           <img src={logo} alt="Logo" />
         </div>
         <nav className='footer-nav'>
-          <Router>
             <h3>Nawigacja:</h3>
             <ul>
               <Link to="/muzeum" onClick={() => { scrollTop() }}>
@@ -67,7 +66,6 @@ const Footer = () => {
                 <li>Kontakt</li>
               </Link>
             </ul>
-          </Router>
         </nav>
         <div className='footer-contact'>
           <h3>Kontakt:</h3>
